@@ -1,0 +1,19 @@
+.formulario-cadastro{
+    margin: 5% auto;
+    background: rgba(194, 173, 240, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.174);
+    border-radius: 32px;
+    max-width: 30%;
+    padding: 36px 64px;
+    border-radius: 24px;
+}
+.formulario-cadastro h1{
+    font-size: 48px;
+    margin: 8px auto;
+}
+.formulario-cadastro label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+

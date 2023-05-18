@@ -1,0 +1,32 @@
+.container-conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-conteudo h1{
+    margin: 36px 16px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.container-conteudo span{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 8px;
+    width: 60%;
+}
+.botao{
+    padding: 32px;
+    font-size: 18px;
+    display: flex;
+    gap: 16px;
+}
+.botao button{
+    width: 200px;
+}
+.botao button a{
+    text-decoration: none;
+    color: #fff;
+}

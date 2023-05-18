@@ -1,0 +1,13 @@
+.botao-logar{
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #370D95;
+    font-size: 22px;
+    margin: 16px auto;
+}

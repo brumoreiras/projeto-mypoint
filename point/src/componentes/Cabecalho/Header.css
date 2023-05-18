@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+.header {
+    padding: 0 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #aaa5a563;
+}
+
+.header h1 {
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header a {
+    margin: 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.header button {
+    width: 200px;
+    font-size: 18px;
+    margin: 16px;
+}
+.header button a{
+    color: #fff;
+}
