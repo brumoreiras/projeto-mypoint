@@ -11,6 +11,7 @@
 }
 
 .cabecalho h1 {
+    display: block;
     font-size: 22px;
     background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
     color: black;
@@ -24,6 +25,7 @@
     font-size: 16px;
 }
 .cabecalho_menu a{
+    display: block;
     text-decoration: none;
     color: #000;
 }

@@ -1,10 +1,12 @@
 
 import { Link } from 'react-router-dom'
+import imagemTeste from '../imagens/imgTeste.png'
 import './Home.css'
 
 const Home = () => {
     return (
         <section className='container_conteudo'> 
+        <div className='container_conteudo__principal'>
             <h1>
                 Encontre o melhor da sua cidade
             </h1>
@@ -18,8 +20,12 @@ const Home = () => {
                 <div className='botao_cadastro__home'>
                     <Link to='/crie-sua-conta'>Cadastre-se</Link>
                 </div>
-
             </div>
+        </div>
+        <div className='container_couteudo__secundario'>
+            <img src={imagemTeste} alt='imagem teste'/>
+        </div>
+
         </section>
     )
 }

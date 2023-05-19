@@ -1,9 +1,14 @@
 .container_conteudo{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
+}
+.container_conteudo__principal{
+    width: 50%;
+    border: 1px solid black;
+    text-align: justify;
 }
 .container_conteudo h1{
     margin: 36px 8px;
