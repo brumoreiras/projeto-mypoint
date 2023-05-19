@@ -1,32 +1,70 @@
-.container-conteudo{
+.container_conteudo{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container-conteudo h1{
-    margin: 36px 16px;
+.container_conteudo h1{
+    margin: 36px 8px;
     font-size: 32px;
     font-weight: 700;
 }
-.container-conteudo span{
+.container_conteudo p{
     text-align: center;
     font-size: 16px;
     font-weight: 300;
-    margin: 8px;
+    margin-bottom: 32px;
     width: 60%;
 }
-.botao{
-    padding: 32px;
-    font-size: 18px;
+.botoes_cabecalho__home{
     display: flex;
-    gap: 16px;
+    gap: 8px;
+    color: #fff;
+    text-align: center;
+    
 }
-.botao button{
-    width: 200px;
-}
-.botao button a{
+.botoes_cabecalho__home a{
     text-decoration: none;
     color: #fff;
+    
+}
+.botao_login__home{
+    width: 180px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #370D95;
+}
+.botao_cadastro__home{
+    width: 180px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #370D95;
+}
+@media screen and (max-width: 600px) {
+    .container_conteudo h1{
+        text-align: justify;
+        margin-bottom: 0;
+        width: 90%;
+        
+    }
+    .container_conteudo p{
+        text-align: justify;
+        width: 90%;
+        margin-bottom: 16px;
+    }
+    .botoes_cabecalho__home{
+        flex-direction: column;
+        padding: 8px;
+    }
+    .botao_login__home, .botao_cadastro__home{
+        padding: 24px;
+        width: 300px;
+    }
+    
+    
 }

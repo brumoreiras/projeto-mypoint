@@ -13,9 +13,11 @@ const Container = () => {
     }
     return (
         <section className="container-login">
-            <form onSubmit={aoSalvar}>
-                <h1>Login</h1>
-                <h2>Seja bem-vindo ao Point</h2>
+            <form className="container_formulario" onSubmit={aoSalvar}>
+                <div className="container_texto">
+                    <h1>Login</h1>
+                    <h2>Seja bem-vindo ao Point</h2>
+                </div>
                 <Input
                     type="email"
                     obrigatorio={true}
@@ -33,10 +35,18 @@ const Container = () => {
                     aoAlterado={valor => setSenha(valor)}
 
                 />
-                <span>Esqueceu a senha?</span>
-                <Botao>
-                    Entrar
-                </Botao>
+                <div>
+                     <span>Esqueceu a senha?</span>
+                </div>
+               
+                <div className="container_botao__login">
+
+                    <Botao>
+                        Entrar
+                    </Botao>
+                </div>
+
+
             </form>
         </section>
     )

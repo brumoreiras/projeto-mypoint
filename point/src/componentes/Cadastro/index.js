@@ -15,7 +15,10 @@ const Formulario = () => {
                 event.preventDefault()
                 console.log(nome, eMailCadastro, senhaCadastro)
             }}>
-                <h1>Cadastre-se</h1>
+                <div className="cabecalho_formulario">
+                    <h1>Cadastre-se</h1>
+                </div>
+                
                 <Input
                     type="text"
                     obrigatorio={true}
@@ -40,9 +43,12 @@ const Formulario = () => {
                     valor={senhaCadastro}
                     aoAlterado={valor => setSenhaCadastro(valor)}
                 />
-                <Botao>
-                    Cadastrar
-                </Botao>
+                <div className="container_botao__cadastro">
+
+                    <Botao>
+                        Entrar
+                    </Botao>
+                </div>
             </form>
         </section>
     )

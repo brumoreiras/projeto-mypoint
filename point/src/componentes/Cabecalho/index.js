@@ -1,23 +1,23 @@
 
 import './Header.css'
-import Botao from '../Botao'
 import { Link } from 'react-router-dom'
 
 const Cabecalho = () => {
     return (
-        <header className="header">
+        <header className="cabecalho">
             <h1>MyPoint</h1>
-            <div className='header-menu'>
+            <div className='cabecalho_menu'>
                 <Link to='/'>Home</Link>
                 <Link to="/sobre">Sobre</Link>
             </div>
-            <div>
-                <Botao>
+            <div className='botoes_cabecalho'>
+                <div className='botao_login'>
                     <Link to='/login'>login</Link>
-                </Botao>
-                <Botao>
+                </div>
+                <div className='botao_cadastro'>
                     <Link to='/crie-sua-conta'>Cadastre-se</Link>
-                </Botao>
+                </div>
+
             </div>
         </header>
     )

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 
-.header {
-    padding: 0 37px;
+.cabecalho {
+   padding: 8px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,26 +10,57 @@
     border-bottom: 1px solid #aaa5a563;
 }
 
-.header h1 {
+.cabecalho h1 {
+    font-size: 22px;
     background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
     color: black;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.header a {
-    margin: 16px;
+.cabecalho_menu{
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+}
+.cabecalho_menu a{
     text-decoration: none;
-    color: black;
-    font-size: 22px;
+    color: #000;
 }
 
-.header button {
-    width: 200px;
-    font-size: 18px;
-    margin: 16px;
-}
-.header button a{
+.botoes_cabecalho{
+    display: flex;
+    gap: 8px;
     color: #fff;
+    text-align: center;
+}
+.botoes_cabecalho a{
+    text-decoration: none;
+    color: #fff;
+}
+.botao_login{
+    font-size: 16px;
+    padding: 8px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: #370D95;
+}
+.botao_cadastro{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: #370D95;
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho h1{
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+    .botao_cadastro, .botao_login, .cabecalho_menu{
+        display: none;
+    }
 }
