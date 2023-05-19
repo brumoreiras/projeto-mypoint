@@ -12,7 +12,7 @@ const Cabecalho = () => {
             </div>
             <div className='botoes_cabecalho'>
                 <div className='botao_login'>
-                    <Link to='/login'>login</Link>
+                    <Link to='/login'>Login</Link>
                 </div>
                 <div className='botao_cadastro'>
                     <Link to='/crie-sua-conta'>Cadastre-se</Link>

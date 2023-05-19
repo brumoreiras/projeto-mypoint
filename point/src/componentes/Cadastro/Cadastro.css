@@ -1,17 +1,19 @@
-.formulario-cadastro{
+.formulario-cadastro {
     margin: 5% auto;
-    background: rgba(194, 173, 240, 0.241);
+    color: #3f3e3e;
+    background: #d5adfc8c;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.174);
     border-radius: 32px;
     width: 30%;
     border-radius: 24px;
 }
-.cabecalho_formulario{
+
+.cabecalho_formulario {
     padding: 8px 32px;
-    
+
 }
 
-.formulario-cadastro h1{
+.formulario-cadastro h1 {
     font-size: 32px;
     margin-bottom: 8px;
 }
@@ -22,11 +24,13 @@
     height: 100px;
 
 }
-@media screen and (max-width: 600px) {
-    .formulario-cadastro{
-        width: 90%;
+
+@media screen and (max-width: 750px) {
+    .formulario-cadastro {
+        min-width: 90%;
     }
-    .cabecalho_formulario{
+
+    .cabecalho_formulario {
         padding: 8px 16px;
     }
 }

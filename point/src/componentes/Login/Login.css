@@ -1,6 +1,7 @@
 .container-login {
+    color: #3f3e3e;
     margin: 5% auto;
-    background: rgba(194, 173, 240, 0.241);
+    background: #d5adfc8c;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.174);
     border-radius: 32px;
     width: 30%;
@@ -37,9 +38,9 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .container-login{
-        width: 90%;
+        min-width: 90%;
     }
     .container_texto{
         padding: 8px 16px;
