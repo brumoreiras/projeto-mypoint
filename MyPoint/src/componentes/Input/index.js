@@ -3,6 +3,7 @@ import './Input.css'
 
 const Input = (props) => {
 
+
     const aoDigitado = (evento) => {
         props.aoAlterado(evento.target.value)
     }
@@ -13,7 +14,7 @@ const Input = (props) => {
             <input
                 type={props.type}
                 onChange={aoDigitado}
-                value={props.valor}
+                name = {props.name }
                 required={props.obrigatorio}
                 placeholder={props.placeholder}
             />

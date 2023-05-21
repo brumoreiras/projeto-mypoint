@@ -15,10 +15,11 @@ const Formulario = () => {
                 event.preventDefault()
                 console.log(nome, eMailCadastro, senhaCadastro)
             }}>
+
                 <div className="cabecalho_formulario">
                     <h1>Cadastre-se</h1>
                 </div>
-                
+
                 <Input
                     type="text"
                     obrigatorio={true}
