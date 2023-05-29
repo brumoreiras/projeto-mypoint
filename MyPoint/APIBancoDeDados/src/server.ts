@@ -1,4 +1,5 @@
 import express, { Request, Response, NextFunction } from 'express';
+import cors from 'cors';
 import 'express-async-errors';
 import { router } from './router';
 
@@ -6,6 +7,10 @@ import { router } from './router';
 const app = express();
 app.use(express.json());
 const port = process.env.PORT || 3033;
+
+app.use(cors({
+    origin: '*'
+}));
 
 app.use(router);
 
