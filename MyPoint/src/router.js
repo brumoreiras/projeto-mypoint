@@ -9,7 +9,7 @@ import Formulario from './componentes/Cadastro'
 const RouterApp = () => {
     return (
         <BrowserRouter>
-            <Cabecalho />
+            <Cabecalho  />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/sobre' element={<Sobre />} />

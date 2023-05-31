@@ -17,18 +17,18 @@ const Container = () => {
                 },
                 body: JSON.stringify({ email, password })
             })
-            const data = await response.json({email, password});
-            if (data == email) {
+            const data = await response.json();
+            if (response.ok && data.nomeUsuario) {
                 // Login válido
-                console.log(data.user.name);
+                console.log("Login realizado com sucesso ",data.nomeUsuario);
             } else {
                 // Login inválido
                 console.log("erro de acesso")
             }
         
-            console.log(data)
+            console.log(data.nomeUsuario);
             console.log(data.name)
-            console.log(response)
+            console.log(data)
         } catch (error) {
             console.error('Ocorreu um erro ao fazer login:', error);
           }
