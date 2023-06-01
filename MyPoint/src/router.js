@@ -4,17 +4,19 @@ import Sobre from './componentes/Sobre'
 import Cabecalho from './componentes/Cabecalho'
 import Container from './componentes/Login'
 import Formulario from './componentes/Cadastro'
+import CadastroSucesso from './componentes/CadastroSucesso'
 
 
 const RouterApp = () => {
     return (
         <BrowserRouter>
-            <Cabecalho  />
+            <Cabecalho />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/sobre' element={<Sobre />} />
                 <Route path='/login' element={<Container />} />
                 <Route path='/crie-sua-conta' element={<Formulario />} />
+                <Route path='/cadastro-com-sucesso' element={<CadastroSucesso />} />
             </Routes>
         </BrowserRouter>
     )
