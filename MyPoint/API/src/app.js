@@ -7,9 +7,9 @@ app.use(express.json())
 
 const cadastroDoUsuario = [
     {
-        id: '',
-        "eMail": '',
-        "senha": ''
+        id: 1,
+        "eMail": 'bruhnno.ms@gmail.com',
+        "senha": '12345'
     },
 ]
 
