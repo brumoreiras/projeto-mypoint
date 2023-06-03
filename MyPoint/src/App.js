@@ -1,11 +1,13 @@
 
 import './App.css'
-import RouterApp from './router';
+import CadastroSucesso from './componentes/CadastroSucesso';
+/* import RouterApp from './router'; */
 
 function App() {
   return (
     <div className="app">
-      <RouterApp/>
+      {/* <RouterApp /> */}
+      <CadastroSucesso />
     </div>
   );
 }

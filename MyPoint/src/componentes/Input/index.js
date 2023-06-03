@@ -6,8 +6,9 @@ const Input = (props) => {
 
     const aoDigitado = (evento) => {
         props.aoAlterado(evento.target.value)
+        
     }
-
+    
     return (
         <div className="container">
             <label>{props.label}</label>
