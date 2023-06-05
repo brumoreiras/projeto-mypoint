@@ -2,3 +2,19 @@
     margin-top: 15%;
     text-align: center;
 }
+.botao_sair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.botao_sair a{
+    text-decoration: none;
+    width: 260px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 8px;
+    border: 4px solid #370D95;
+    color: #3f3e3e;
+}

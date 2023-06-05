@@ -2,13 +2,15 @@ import { useState } from 'react'
 import Input from '../Input'
 import './Cadastro.css'
 import Botao from '../Botao'
+import { useNavigate } from 'react-router-dom'
+
 
 const Formulario = () => {
 
     const [name, setNome] = useState('')
     const [email, setEmailCadastro] = useState('')
     const [password, setSenhaCadastro] = useState('')
-
+    const navigate = useNavigate();
     //Foi criado o consumo da API com Banco de dados
     //Enviando os dados do formulario para o banco de dados
     async function enviarDados(event) {
@@ -23,6 +25,7 @@ const Formulario = () => {
                 body: JSON.stringify({ name, email, password })
             })
 
+            navigate("/cadastro-com-sucesso");
             console.log(response)
         } catch {
             console.log('Ocorreu um erro : ')

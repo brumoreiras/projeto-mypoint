@@ -1,11 +1,15 @@
 import { useState } from "react"
 import Botao from "../Botao"
 import Input from "../Input"
+import { useNavigate } from "react-router-dom";
 import './Login.css'
+
+
 
 const Container = () => {
     const [email, setEmail] = useState('')
     const [password, setSenha] = useState('')
+    const navigate = useNavigate()
 
     async function aoSalvar(evento) {
         evento.preventDefault()
@@ -20,18 +24,19 @@ const Container = () => {
             const data = await response.json();
             if (response.ok && data.nomeUsuario) {
                 // Login válido
-                console.log("Login realizado com sucesso ",data.nomeUsuario);
+                navigate("/login-com-sucesso");
+                /* console.log("Login realizado com sucesso ",data.nomeUsuario); */
             } else {
                 // Login inválido
                 console.log("erro de acesso")
             }
-        
+
             console.log(data.nomeUsuario);
             console.log(data.name)
             console.log(data)
         } catch (error) {
             console.error('Ocorreu um erro ao fazer login:', error);
-          }
+        }
 
         console.log('botao clicado => ', email, password)
     }
@@ -41,7 +46,7 @@ const Container = () => {
                 <div className="container_texto">
                     <h1>Login</h1>
                     <h2>Seja bem-vindo ao Point</h2>
-                 
+
                 </div>
                 <Input
                     type="email"
