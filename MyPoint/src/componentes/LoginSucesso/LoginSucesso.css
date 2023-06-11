@@ -1,6 +1,7 @@
 .login_sucesso{
     margin-top: 15%;
     text-align: center;
+    padding: 16px;
 }
 .botao_sair {
     display: flex;

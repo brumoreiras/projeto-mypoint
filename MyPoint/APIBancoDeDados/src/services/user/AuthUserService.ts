@@ -21,7 +21,7 @@ class AuthUserService {
             throw new Error("Senha invalido")
         }
         return({
-            nomeUsuario:user.email
+            nomeUsuario:user.name
         });
     }
 }

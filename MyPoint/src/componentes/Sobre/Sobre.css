@@ -22,17 +22,15 @@
 }
 
 .container_card {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    justify-content: center;
     flex-wrap: wrap;
-    grid-gap: 20px;
 
 }
 
 @media screen and (max-width: 750px) {
-    .container_card {
-        grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
-    }
 
     .titulo_sobre h1 {
         font-size: 2em;

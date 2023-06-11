@@ -1,7 +1,13 @@
 import './LoginSucesso.css'
-import { Link } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 
-const LoginSucesso = ({ name }) => {
+
+const LoginSucesso = ({ location }) => {
+
+
+    const { state } = useLocation();
+    const name = state ? state.name : "";
+
     return (
         <div className='login_sucesso'>
             <h1>Bem-vindo ao MyPoint: Descubra o Melhor da Sua Cidade!</h1>

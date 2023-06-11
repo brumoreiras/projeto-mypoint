@@ -1,3 +1,6 @@
+.container-login header {
+    display: none;
+}
 .container-login {
     color: #3f3e3e;
     margin: 5% auto;

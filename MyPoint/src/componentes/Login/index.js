@@ -24,7 +24,7 @@ const Container = () => {
             const data = await response.json();
             if (response.ok && data.nomeUsuario) {
                 // Login válido
-                navigate("/login-com-sucesso");
+                navigate("/login-com-sucesso", { state: { name: data.nomeUsuario } });
                 /* console.log("Login realizado com sucesso ",data.nomeUsuario); */
             } else {
                 // Login inválido
