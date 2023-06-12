@@ -4,7 +4,17 @@ const app = express()
 
 app.use(express.json())
 
+<<<<<<< HEAD
+const cadastroDoUsuario = [
+    {
+        id: 1,
+        "eMail": 'bruhnno.ms@gmail.com',
+        "senha": '12345'
+    },
+]
+=======
 const cadastroDoUsuario = []
+>>>>>>> 113e4f24519850177890f5eedab9a8be3f83c6df
 
 app.get('/', (req, res) => {
     res.send("Seja bem-vindo")
