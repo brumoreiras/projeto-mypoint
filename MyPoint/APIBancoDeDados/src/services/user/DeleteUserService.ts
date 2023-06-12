@@ -3,16 +3,14 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 interface Delete {
-    name: string;
     email: string;
 }
 
 class DeleteUserService {
-    async execute({ name, email }: Delete) {
+    async execute({ email }: Delete) {
         try {
-            const deletedUser = await prisma.user.delete({
+            const deletedUser = await prisma.user.deleteMany({
                 where: {
-                    name: name,
                     email: email
                 },
             });
