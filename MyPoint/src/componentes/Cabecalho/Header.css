@@ -65,15 +65,19 @@
 }
 
 @media screen and (max-width: 750px) {
+    .cabecalho{
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: space-between;
+    }
     .cabecalho h1 {
         font-size: 22px;
-        width: 100%;
         text-align: center;
     }
 
     .botao_cadastro,
-    .botao_login,
-    .cabecalho_menu {
+    .botao_login {
         display: none;
     }
+
 }

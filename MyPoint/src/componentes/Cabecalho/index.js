@@ -10,10 +10,10 @@ const Cabecalho = () => {
   return (
     <header className="cabecalho">
       <h1>MyPoint</h1>
-      <div className='cabecalho_menu'>
+      <nav className='cabecalho_menu'>
         <Link to='/'>Home</Link>
         <Link to="/sobre">Sobre</Link>
-      </div>
+      </nav>
       <div className='botoes_cabecalho'>
         {!hideLoginButton && (
           <div className='botao_login'>
