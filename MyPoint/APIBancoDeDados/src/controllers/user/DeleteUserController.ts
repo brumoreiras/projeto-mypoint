@@ -8,7 +8,7 @@ class UserController {
         const deleteUserService = new DeleteUserService();
 
         try {
-            const deletedUser = await deleteUserService.execute({ name, email });
+            const deletedUser = await deleteUserService.execute({ email });
             return res.json(deletedUser);
         } catch (error) {
             return res.status(500).json({ error: 'Erro ao excluir o usuário' });
