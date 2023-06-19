@@ -14,7 +14,7 @@ const Container = () => {
     async function aoSalvar(evento) {
         evento.preventDefault()
         try {
-            const response = await fetch('http://localhost:3033/MyPoint/login', {
+            const response = await fetch('containers-us-west-75.railway.app/MyPoint/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
