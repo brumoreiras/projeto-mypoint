@@ -6,7 +6,7 @@ import { router } from './router';
 
 const app = express();
 app.use(express.json());
-const port = process.env.PORT || 5854;
+const port = process.env.PORT || 3033;
 
 app.use(cors({
     origin: '*'
